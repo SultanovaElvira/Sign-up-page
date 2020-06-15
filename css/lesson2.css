@@ -1,0 +1,199 @@
+body {
+  background-image: url("../img/view.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+header {
+  max-width: 1139px;
+  height: 20px;
+  margin: 38px auto 0 auto;
+  margin-top: 0;
+}
+
+.top-header {
+  padding: 15px;
+}
+/* варианты позиционирования */
+/* #logo {
+  position: relative;
+  top: 50px;
+} */
+
+/* h1 {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  color: white;
+  font-size: 18px;
+} */
+
+a {
+  text-decoration: none;
+}
+
+.menu-bar {
+  float: right;
+  display: none;
+}
+
+@media screen and (max-width: 786px) {
+  .top-header {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .menu-bar {
+    display: block;
+  }
+
+  #top-menu {
+    display: none;
+  }
+}
+
+#top-menu a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 24px; /* left ставим чтоб margin не сдвигал элемент справа */
+  color: #ffffff;
+}
+
+#top-menu img,
+#top-menu svg {
+  vertical-align: middle;
+}
+
+.download-icon {
+  margin-right: 6px;
+}
+#logo {
+  /* position: fixed; остается на месте при уменьшении страницы и скроллинге */
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+}
+
+.instagram-icon::before {
+  content: url("../img/ICON_INSTAGRAM_svg.svg");
+}
+
+/* .red path{
+  fill: red;
+} */
+
+#top-menu {
+  float: right;
+}
+
+.sign-header {
+  position: relative;
+  top: -39px;
+  width: 324px;
+  height: 150px;
+  left: 20px;
+  right: 21px;
+  background: linear-gradient(90deg, #ab47bc 0%, #7b1fa2 100%);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.12), 0px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+#sign-up {
+  background-color: white;
+  height: 509px;
+  width: 365px;
+  margin: 160px auto 0;
+}
+
+.underline {
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.submit {
+  color: #9c27b0;
+  border: none;
+  background: transparent; /*  если не добавим это, то в других браузерах, в частности в сафари кнопка будет серая */
+  display: flex;
+  margin: 0 auto;
+}
+
+.sign-header h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  /* identical to box height */
+  padding-top: 31px;
+  color: #ffffff;
+  text-align: center;
+}
+.sign-classical {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  margin-top: -7px;
+  margin-bottom: 33px;
+  /* identical to box height */
+
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.sign-icons {
+  margin-top: 36px;
+  text-align: center;
+}
+
+.sign-icons a {
+  /* margin-left: 18px;
+  margin-right: 18px;    или*/
+  margin: 0 18px;
+}
+
+#sign-up form label {
+  margin-left: 26px;
+  width: 28px;
+}
+
+#sign-up form input {
+  width: 269px;
+  margin-left: 11px;
+  padding: 0px;
+  margin-bottom: 46px;
+}
+
+footer {
+  width: 1136px;
+  margin: 72px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#foot-menu a,
+footer p {
+  color: #ffffff;
+}
+
+#foot-menu a {
+  color: #ffffff;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 12px;
+  margin-right: 34px;
+}
+footer p {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-size: 10px;
+  margin: 0;
+  color: #ffffff;
+}
