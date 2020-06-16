@@ -38,22 +38,6 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 786px) {
-  .top-header {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .menu-bar {
-    display: block;
-  }
-
-  #top-menu {
-    display: none;
-  }
-}
-
 #top-menu a {
   font-family: Roboto;
   font-style: normal;
@@ -172,10 +156,8 @@ a {
 }
 
 footer {
-  width: 1136px;
+  width: 90%;
   margin: 72px auto 0;
-  display: flex;
-  justify-content: space-between;
 }
 
 #foot-menu a,
@@ -196,4 +178,45 @@ footer p {
   font-size: 10px;
   margin: 0;
   color: #ffffff;
+}
+
+@media screen and (max-width: 786px) {
+  .top-header {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* footer {
+   
+    margin-bottom: 74px;
+  } */
+
+  footer p {
+    text-align: center;
+    padding: 40px 28px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .menu-bar {
+    display: block;
+  }
+
+  #top-menu {
+    display: none;
+  }
+
+  footer nav {
+    text-align: center;
+  }
+
+  #foot-menu a {
+    margin-right: 6%;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
 }
