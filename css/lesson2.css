@@ -196,7 +196,7 @@ footer p {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .menu-bar {
     display: block;
   }
@@ -218,5 +218,11 @@ footer p {
   footer {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #top-menu a {
+    margin-left: 8px;
   }
 }
