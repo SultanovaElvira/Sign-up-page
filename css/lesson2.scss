@@ -1,0 +1,219 @@
+$float: right;
+$fontFamilyR: Roboto;
+$alignCenter: center;
+@mixin defaultfont {
+  $fontFamilyR: Roboto;
+  font: {
+    style: normal;
+    weight: normal;
+  }
+}
+
+body {
+  background: {
+    image: url("../img/view.png");
+    repeat: no-repeat;
+    size: cover;
+  }
+  margin: 0;
+}
+
+header {
+  max-width: 1139px;
+  height: 20px;
+  margin: 38px auto 0 auto;
+  margin-top: 0;
+}
+
+#top-menu a,
+.sign-header h1,
+#foot-menu a,
+footer p,
+#logo {
+  color: #ffffff;
+}
+
+.sign-header h1,
+.sign-classical,
+.sign-icons,
+footer p {
+  text-align: center;
+}
+
+#top-menu {
+  float: $float;
+
+  a {
+    @include defaultfont;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 24px; /* left ставим чтоб margin не сдвигал элемент справа */
+  }
+
+  img,
+  svg {
+    vertical-align: middle;
+  }
+}
+.top-header {
+  padding: 15px;
+}
+/* варианты позиционирования */
+/* #logo {
+  position: relative;
+  top: 50px;
+} */
+
+/* h1 {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  color: white;
+  font-size: 18px;
+} */
+
+a {
+  text-decoration: none;
+}
+
+.menu-bar {
+  float: $float;
+  display: none;
+}
+
+.download-icon {
+  margin-right: 6px;
+}
+
+#logo {
+  /* position: fixed; остается на месте при уменьшении страницы и скроллинге */
+  display: inline-block;
+  font-size: 18px;
+}
+
+.sign-header {
+  position: relative;
+  top: -39px;
+  width: 324px;
+  height: 150px;
+  left: 20px;
+  right: 21px;
+  background: linear-gradient(90deg, #ab47bc 0%, #7b1fa2 100%);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.12), 0px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+#sign-up {
+  background-color: white;
+  height: 509px;
+  width: 365px;
+  margin: 160px auto 0;
+}
+
+.underline {
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.submit {
+  color: #9c27b0;
+  border: none;
+  background: transparent; /*  если не добавим это, то в других браузерах, в частности в сафари кнопка будет серая */
+  display: flex;
+  margin: 0 auto;
+}
+
+.sign-header h1 {
+  @include defaultfont;
+
+  font-size: 20px;
+  line-height: 23px;
+  padding-top: 31px;
+}
+.sign-classical {
+  @include defaultfont;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 32px- 39px;
+  margin-bottom: 33px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.sign-icons {
+  margin-top: 36px;
+}
+
+.sign-icons a {
+  margin: 0 18px;
+}
+
+#sign-up form {
+  label {
+    margin-left: 26px;
+    width: 28px;
+  }
+  input {
+    width: 269px;
+    margin-left: 11px;
+    padding: 0px;
+    margin-bottom: 46px;
+  }
+}
+
+footer {
+  width: 90%;
+  margin: 72px auto 0;
+
+  p {
+    font-size: 10px;
+    margin: 0;
+  }
+}
+
+#foot-menu a {
+  @include defaultfont;
+  font-weight: 500;
+  font-size: 12px;
+  margin-right: 34px;
+}
+
+@media screen and (max-width: 786px) {
+  .top-header {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  footer p {
+    padding: 40px 28px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .menu-bar {
+    display: block;
+  }
+
+  #top-menu {
+    display: none;
+  }
+
+  footer nav {
+    text-align: center;
+  }
+
+  #foot-menu a {
+    margin-right: 6%;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #top-menu a {
+    margin-left: 8px;
+  }
+}
