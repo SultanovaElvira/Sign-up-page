@@ -8,9 +8,9 @@ $alignCenter: center;
     weight: normal;
   }
 }
-@mixin size($width, $height){
-  width:$width;
-  height:$height;
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
 }
 
 body {
@@ -99,7 +99,7 @@ a {
   position: relative;
   top: -39px;
   @include size(324px, 150px);
-  
+
   left: 20px;
   right: 21px;
   background: linear-gradient(90deg, #ab47bc 0%, #7b1fa2 100%);
